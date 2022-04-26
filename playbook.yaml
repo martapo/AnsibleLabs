@@ -1,1 +1,14 @@
+---
+#this message prints a simple debug message
+
+- name: Echo
+  host: localhost
+  connection: local
+  
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: "{{text}}"
+      
+    
 
