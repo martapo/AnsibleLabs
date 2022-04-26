@@ -1,8 +1,7 @@
 ---
 #this message prints a simple debug message
-
 - name: Echo
-  host: localhost
+  hosts: localhost
   connection: local
   
   tasks:
