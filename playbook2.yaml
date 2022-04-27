@@ -2,9 +2,12 @@
 #this message prints a simple debug message
 #this Playbook prints a simple debug message
 - name: Echo
-  hosts: all
+  hosts: "{{class}}"
   
   tasks:
   - name: Print debug message
+    debug:
+      msg: "{{text}}"
+ - name: creates directory
     debug:
       msg: "{{text}}"
