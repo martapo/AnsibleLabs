@@ -8,6 +8,7 @@
   - name: Print debug message
     debug:
       msg: "{{text}}"
- - name: creates directory
-    debug:
-      msg: "{{text}}"
+ - name: Creates directory
+    file:
+      path: /tmp/polna/java_dns
+      state: directory
