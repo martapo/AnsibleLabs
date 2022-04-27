@@ -1,1 +1,10 @@
-
+---
+#this message prints a simple debug message
+#this Playbook prints a simple debug message
+- name: Echo
+  hosts: all
+  
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: "{{text}}"
