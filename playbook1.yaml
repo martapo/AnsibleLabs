@@ -1,7 +1,8 @@
 ---
 
 - name: Echo
-  hosts: "{{class}}"
+  hosts: all
+  
   
   tasks:
   - name: Print debug message
