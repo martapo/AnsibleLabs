@@ -1,4 +1,5 @@
 ---
+#here you can put i.e. seperatly hosts: back-end-server or all together hosts: "{{class}}"
 - name: Echo 
   hosts: "{{class}}"
 
