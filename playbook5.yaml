@@ -13,7 +13,7 @@
       path: /tmp/polna/gradle
       state: directory
       
-  - name: download sources
+  - name: Download sources
     get_url: url=https://services.gradle.org/distributions/{{gradle_version}} dest=/tmp/polna/gradle/{{gradle_version}}
   - name: Extract foo.tgz into /var/lib/foo
     unarchive:
