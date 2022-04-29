@@ -1,6 +1,7 @@
 ---
----
+
 #here you need to pay attention to double brackets and the name how we called our variable - in this case: "class"
+
 - name: Echo 
   hosts: "{{class}}"
 
