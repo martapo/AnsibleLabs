@@ -8,4 +8,4 @@
   - name: Print debug message
     debug:
       msg: "{{text}}"
-      when: extracted_hosts == "all"
+
