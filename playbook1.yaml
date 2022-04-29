@@ -1,1 +1,9 @@
+---
 
+- name: Echo
+  hosts: "{{class}}"
+  
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: "{{text}}"
