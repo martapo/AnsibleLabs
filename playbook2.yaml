@@ -1,11 +1,10 @@
 ---
 - name: Echo 
-  hosts: "{{class}}"
-  vars:
-    extracted_hosts: "{{class}}"
+  hosts: all
+ 
   tasks:
   - name: Print debug message
     debug:
       msg: "{{text}}"
-    when: extracted_hosts == "all"
+
       
