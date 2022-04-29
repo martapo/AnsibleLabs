@@ -7,15 +7,12 @@
   - name: Print debug message
     debug:
       msg: "{{text}}"
-      
   - name: Creates directory
     file:
       path: /tmp/polna/gradle
       state: directory
-      
   - name: Download sources
     get_url: url=https://services.gradle.org/distributions/{{gradle_version}} dest=/tmp/polna/gradle/{{gradle_version}}
-    
   - name: Extract foo.tgz into /var/lib/foo
     unarchive:
       src: /tmp/polna/gradle/{{gradle_version}}
