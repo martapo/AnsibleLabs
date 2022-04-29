@@ -1,6 +1,6 @@
 ---
 - name: Echo 
-  hosts: all
+  hosts: back-end-servers
 
   tasks:
   - name: Print debug message
