@@ -1,6 +1,6 @@
 ---
 - name: Echo 
-  hosts: back-end-servers
+  hosts: "{{class}}"
 
   tasks:
   - name: Print debug message
