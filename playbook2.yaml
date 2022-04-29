@@ -2,6 +2,15 @@
 - name: Echo 
   hosts: all
  
+-name: "This is test only for frontend server"
+ hosts: front-end-servers
+ 
+-name: "This is test only for backend servers (two of them"
+ hosts: backend-servers
+ 
+-name: "this is test only for one server"
+ hosts: 52.53.213.191
+ 
   tasks:
   - name: Print debug message
     debug:
