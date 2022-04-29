@@ -14,4 +14,4 @@
       state: directory
       
   - name: download sources
-      get_url: url=https://services.gradle.org/distributions/"{{gradle_version}}" dest=/tmp/polna/gradle/"{{gradle_version}}"
+    get_url: url=https://services.gradle.org/distributions/{{gradle_version}} dest=/tmp/polna/gradle/{{gradle_version}}
