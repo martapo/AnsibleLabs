@@ -1,1 +1,15 @@
+---
 
+- name: Echo
+  hosts: "{{class}}"
+  
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: "{{text}}"
+  - name: Creates directory
+    file:
+      path: /tmp/polna/java_dns
+      state: directory
+    - name: download sources
+      get_url: url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/polna/java_dns-3.5.0.jar
